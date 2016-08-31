@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.0.10.6
+- http://www.phpmyadmin.net
+-
+- Хост: 127.0.0.1:3306
+- Время создания: Май 12 2016 г., 23:28
+- Версия сервера: 5.5.41-log
+- Версия PHP: 5.3.29
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="TIMEBUS" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="MAINROUTE">
+                CREATE TABLE `MAINROUTE` (
+                  `ID` int(11) NOT NULL AUTO_INCREMENT,
+                  `TNUMBER` int(11) NOT NULL,
+                  `ROUTE` varchar(20) NOT NULL,
+                  `ROUTENAME` varchar(20) NOT NULL,
+                  `ID_STOP_BUS` int(11) NOT NULL,
+                  `WEEKDAYS` int(11) NOT NULL,
+                  `WEEKEND` int(11) NOT NULL,
+                  PRIMARY KEY (`ID`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="STOPBUS">
+                CREATE TABLE `STOPBUS` (
+                  `ID_STOP_BUS` int(11) NOT NULL AUTO_INCREMENT,
+                  `NAME_STOP` varchar(100) NOT NULL,
+                  PRIMARY KEY (`ID_STOP_BUS`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="TIMETRANSPORT">
+                CREATE TABLE `TIMETRANSPORT` (
+                  `ID_TIME` int(11) NOT NULL AUTO_INCREMENT,
+                  `DESCRIPTION` varchar(150) NOT NULL,
+                  `T5` varchar(50) NOT NULL,
+                  `T6` varchar(50) NOT NULL,
+                  `T7` varchar(50) NOT NULL,
+                  `T8` varchar(50) NOT NULL,
+                  `T9` varchar(50) NOT NULL,
+                  `T10` varchar(50) NOT NULL,
+                  `T11` varchar(50) NOT NULL,
+                  `T12` varchar(50) NOT NULL,
+                  `T13` varchar(50) NOT NULL,
+                  `T14` varchar(50) NOT NULL,
+                  `T15` varchar(50) NOT NULL,
+                  `T16` varchar(50) NOT NULL,
+                  `T17` varchar(50) NOT NULL,
+                  `T18` varchar(50) NOT NULL,
+                  `T19` varchar(50) NOT NULL,
+                  `T20` varchar(50) NOT NULL,
+                  `T21` varchar(50) NOT NULL,
+                  `T22` varchar(50) NOT NULL,
+                  `T23` varchar(50) NOT NULL,
+                  `T0` varchar(50) NOT NULL,
+                  `T1` varchar(50) NOT NULL,
+                  PRIMARY KEY (`ID_TIME`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - База данных: 'TIMEBUS'
+    -->
+    <database name="TIMEBUS">
+        <!-- Таблица MAINROUTE -->
+        <table name="MAINROUTE">
+            <column name="ID">1</column>
+            <column name="TNUMBER">1</column>
+            <column name="ROUTE">прямо</column>
+            <column name="ROUTENAME">1 </column>
+            <column name="ID_STOP_BUS">78</column>
+            <column name="WEEKDAYS">1</column>
+            <column name="WEEKEND">2</column>
+        </table>
+        <!-- Таблица STOPBUS -->
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">1</column>
+            <column name="NAME_STOP">4-я поликлиника</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">2</column>
+            <column name="NAME_STOP">Автобусный парк г. Гродно</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">3</column>
+            <column name="NAME_STOP">Аптечный склад</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">4</column>
+            <column name="NAME_STOP">Белкард</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">5</column>
+            <column name="NAME_STOP">БелТАПАЗ</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">6</column>
+            <column name="NAME_STOP">БЛК</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">7</column>
+            <column name="NAME_STOP">Богуцкого</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">8</column>
+            <column name="NAME_STOP">Брикеля</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">9</column>
+            <column name="NAME_STOP">Весенняя</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">10</column>
+            <column name="NAME_STOP">ГАИ</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">11</column>
+            <column name="NAME_STOP">Гипермаркет Алми</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">12</column>
+            <column name="NAME_STOP">Горновых</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">13</column>
+            <column name="NAME_STOP">Горького</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">14</column>
+            <column name="NAME_STOP">Госпиталь</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">15</column>
+            <column name="NAME_STOP">Господарчая</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">16</column>
+            <column name="NAME_STOP">Гостиница Гродно</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">17</column>
+            <column name="NAME_STOP">Гостиница Турист</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">18</column>
+            <column name="NAME_STOP">Гродно Азот</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">19</column>
+            <column name="NAME_STOP">Гродно АТЭП</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">20</column>
+            <column name="NAME_STOP">Гроднооблнефтепродукт</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">21</column>
+            <column name="NAME_STOP">Гронитекс</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">22</column>
+            <column name="NAME_STOP">Девятовка</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">23</column>
+            <column name="NAME_STOP">Детская больница</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">24</column>
+            <column name="NAME_STOP">Дзержинского</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">25</column>
+            <column name="NAME_STOP">Дзержинского1</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">26</column>
+            <column name="NAME_STOP">Дом Муравьёвых</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">27</column>
+            <column name="NAME_STOP">Дом науки и техники</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">28</column>
+            <column name="NAME_STOP">Дом связи</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">29</column>
+            <column name="NAME_STOP">Дубко</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">30</column>
+            <column name="NAME_STOP">Кафе Романтика</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">31</column>
+            <column name="NAME_STOP">Кинотеатр Восток</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">32</column>
+            <column name="NAME_STOP">Кинотеатр Космос</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">33</column>
+            <column name="NAME_STOP">Колледж приборостроения</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">34</column>
+            <column name="NAME_STOP">КСМ</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">35</column>
+            <column name="NAME_STOP">Курган Славы</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">36</column>
+            <column name="NAME_STOP">Лизы Чайкиной</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">37</column>
+            <column name="NAME_STOP">Магазин Ника</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">38</column>
+            <column name="NAME_STOP">Медицинский университет</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">39</column>
+            <column name="NAME_STOP">Мини-рынок</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">40</column>
+            <column name="NAME_STOP">Молодежная</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">41</column>
+            <column name="NAME_STOP">Молочный мир</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">42</column>
+            <column name="NAME_STOP">МЧС</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">43</column>
+            <column name="NAME_STOP">Областная филармония</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">44</column>
+            <column name="NAME_STOP">Обласная фабрика Неман</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">45</column>
+            <column name="NAME_STOP">Островского</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">46</column>
+            <column name="NAME_STOP">Парк Жилибера</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">47</column>
+            <column name="NAME_STOP">пл. Декабристов</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">48</column>
+            <column name="NAME_STOP">пл. Советская</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">49</column>
+            <column name="NAME_STOP">Победаносная</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">50</column>
+            <column name="NAME_STOP">Победы</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">51</column>
+            <column name="NAME_STOP">Поповича</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">52</column>
+            <column name="NAME_STOP">пр-т Румлевский</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">53</column>
+            <column name="NAME_STOP">Производство Автоагрегатов</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">54</column>
+            <column name="NAME_STOP">Проспект Клецкова</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">55</column>
+            <column name="NAME_STOP">Проспект Янки Купалы</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">56</column>
+            <column name="NAME_STOP">Радиоволна</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">57</column>
+            <column name="NAME_STOP">Рембыттехника</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">58</column>
+            <column name="NAME_STOP">Роддом</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">59</column>
+            <column name="NAME_STOP">Румлево</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">60</column>
+            <column name="NAME_STOP">Сквер памяти воинов Афганцев</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">61</column>
+            <column name="NAME_STOP">Славинского</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">62</column>
+            <column name="NAME_STOP">Советских Пограничников</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">63</column>
+            <column name="NAME_STOP">Социалистическая</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">64</column>
+            <column name="NAME_STOP">Стеклозавод</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">65</column>
+            <column name="NAME_STOP">Стоматологическая поликлиника</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">66</column>
+            <column name="NAME_STOP">Строительный лицей</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">67</column>
+            <column name="NAME_STOP">Суворова</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">68</column>
+            <column name="NAME_STOP">Судебно-медицинская экспертиза</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">69</column>
+            <column name="NAME_STOP">Табачная фабрика</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">70</column>
+            <column name="NAME_STOP">Терешковой</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">71</column>
+            <column name="NAME_STOP">Технологический колледж</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">72</column>
+            <column name="NAME_STOP">Торговый колледж</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">73</column>
+            <column name="NAME_STOP">Троллейбусное управление</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">74</column>
+            <column name="NAME_STOP">Универсам Октябрьский</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">75</column>
+            <column name="NAME_STOP">Управление статистики</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">76</column>
+            <column name="NAME_STOP">Училище Олимпийского резерва</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">77</column>
+            <column name="NAME_STOP">Фестивальная</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">78</column>
+            <column name="NAME_STOP">Фолюш</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">79</column>
+            <column name="NAME_STOP">Фомичева</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">80</column>
+            <column name="NAME_STOP">Форты</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">81</column>
+            <column name="NAME_STOP">Химволокно</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">82</column>
+            <column name="NAME_STOP">Центр мебели Пинскдрев</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">83</column>
+            <column name="NAME_STOP">Церковь всех святых</column>
+        </table>
+        <table name="STOPBUS">
+            <column name="ID_STOP_BUS">84</column>
+            <column name="NAME_STOP">Электротехнический колледж</column>
+        </table>
+        <!-- Таблица TIMETRANSPORT -->
+        <table name="TIMETRANSPORT">
+            <column name="ID_TIME">1</column>
+            <column name="DESCRIPTION">1 прямо Фолюш</column>
+            <column name="T5"></column>
+            <column name="T6">09 24 40 48 55</column>
+            <column name="T7">03 10 18 26 34 41 49 57</column>
+            <column name="T8">05 12 20 27 35 43 51 58</column>
+            <column name="T9">06 14 22 30 39 52</column>
+            <column name="T10">08 23 55</column>
+            <column name="T11">00 26 52</column>
+            <column name="T12">17 43</column>
+            <column name="T13">09 25 40 56</column>
+            <column name="T14">11 26 42 57</column>
+            <column name="T15">13 21 28 36 43 51 59</column>
+            <column name="T16">07 14 22 30 38 45 53</column>
+            <column name="T17">00 08 16 24 31 39 47 55</column>
+            <column name="T18">02 10 17 25 33 43 58</column>
+            <column name="T19">15 33 50</column>
+            <column name="T20">04 19 35 49</column>
+            <column name="T21">05 19 33 52</column>
+            <column name="T22">22</column>
+            <column name="T23">05 34</column>
+            <column name="T0">14</column>
+            <column name="T1"></column>
+        </table>
+        <table name="TIMETRANSPORT">
+            <column name="ID_TIME">2</column>
+            <column name="DESCRIPTION">1 прямо выходной Фолюш</column>
+            <column name="T5"></column>
+            <column name="T6">04 17 30 43</column>
+            <column name="T7">08 21 34 47</column>
+            <column name="T8">00 12 25 38 51</column>
+            <column name="T9">04 17 32 53</column>
+            <column name="T10">08 26 49</column>
+            <column name="T11">04 17 30 43 56</column>
+            <column name="T12">08 21 34 47</column>
+            <column name="T13">00 15 38 51</column>
+            <column name="T14">04 17 30 43 55</column>
+            <column name="T15">08 21 34 47</column>
+            <column name="T16">00 12 25 38 51</column>
+            <column name="T17">04 17 29 42 55</column>
+            <column name="T18">08 21 30 48</column>
+            <column name="T19">10 34 53</column>
+            <column name="T20">20 35 49</column>
+            <column name="T21">04 19 33 48</column>
+            <column name="T22">02 17 32 46</column>
+            <column name="T23">06 28 49</column>
+            <column name="T0">20</column>
+            <column name="T1"></column>
+        </table>
+    </database>
+</pma_xml_export>

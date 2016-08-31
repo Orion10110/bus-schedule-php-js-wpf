@@ -1,0 +1,33 @@
+﻿<Page x:Class="WpfApplication4.AddStation"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApplication4"
+      mc:Ignorable="d"
+      Title="AddStation" Height="534.83" Width="616.748">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="52*"/>
+            <RowDefinition Height="419*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="button_Copy" Content="Back" HorizontalAlignment="Left" Height="70" Margin="10,10,0,0" VerticalAlignment="Top" Width="69" Style="{StaticResource MyButtonStyle}" Click="button_Copy_Click" Grid.RowSpan="2" />
+        <Label Content="Остановки" Margin="10" Background="#FFA48B8B" FontSize="18.667" Grid.Column="1"/>
+        <StackPanel HorizontalAlignment="Left" Margin="1,10,0,10" Grid.Row="2" Width="195">
+            <Button Margin="10" Content="Добавить" Height="38" VerticalAlignment="Top" Click="Button_Click_1" Background="#FF91D670"/>
+            <Button Margin="10" Content="Изменить" Height="38" VerticalAlignment="Top" Click="Button_Click_2" />
+            <Button Margin="10" Content="Удалить" Height="38" VerticalAlignment="Top" Click="Button_Click_3"/>
+        </StackPanel>
+        <TextBox Margin="10,10,10,0" x:Name="TextBoxNameStation" Height="24" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Background="White" Grid.Column="1" Grid.Row="1"/>
+        
+            <ListView x:Name="LV" Background="#FFE2E2E2" Height="399" Width="391" Grid.Column="1" Margin="10" Grid.Row="2" SelectionChanged="LV_SelectionChanged"/>
+       
+
+    </Grid>
+</Page>
