@@ -1,0 +1,46 @@
+
+	table{
+		margin:auto;
+		color:rgba(0,0,0,.8)
+		
+	}
+	.wens{
+		color:rgba(255,0,0,.8);
+	}
+	thead{
+		text-align: center;
+	}
+	tbody{
+		text-align:left;
+		vertical-align:top;
+	}
+	table{border-spacing:0;
+	border-collapse:collapse;}
+	td{
+		empty-cells: hide;
+		padding:3px;
+		min-width:30px;
+		border:2px solid #aaaaaa;
+		
+	}
+	.table1{
+	display:table;
+	width:90%;
+	
+}
+.table2{
+	display:none;
+	width:90%;
+	
+}
+	
+	@media (max-width: 900px) {
+.table1{
+	display:none;
+	width:90%;
+}
+.table2{
+	display:table;
+	width:90%;
+}
+}

@@ -1,0 +1,39 @@
+﻿.stat1{
+		float:left;
+		
+		margin-right:150px;
+		text-align: left;
+		
+	
+	}
+	.stat2{
+		float: left;
+		
+		text-align: left;
+		
+	}
+	
+	button[name='nameStop']{
+		
+    outline: none;
+	border:none;
+	
+	
+	}
+	
+	button[name='nameStop']:hover{
+		background: #dcde9f;
+	}
+	button[name='nameStop']:active{
+		background: #446129;
+	}
+	
+	.centr{
+	display: table; margin: 0 auto; text-align: center; width:80%;
+    }
+	.statiAll{
+		display: table;
+		margin: 0 auto;
+		
+	}
+	

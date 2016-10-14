@@ -1,0 +1,12 @@
+.statiAll{
+		padding-left:20%;
+	}
+	@media (max-width: 900px) {
+	.statiAll{
+		padding-left:10%;
+	}
+	}@media (max-width: 400px) {
+	.statiAll{
+		padding-left:5%;
+	}
+	}

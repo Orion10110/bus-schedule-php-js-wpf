@@ -1,0 +1,92 @@
+﻿#clock {
+
+  font-family: sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #555;
+  float:left;
+}
+img {
+	margin-right:20px;
+  float:left;
+  height:50px;
+ 
+}
+#box {
+	height:50px;
+	width: auto;
+	background:rgba(255,255,255,.3);
+	border-bottom-left-radius: 1em;
+		border-bottom-right-radius: 1em;
+	position:absolute;
+	right:0px;
+	padding-right:3%;
+	display: none;
+}
+
+	
+	body footer{
+		
+		background:#406017;
+		height:50px;
+		border-top-left-radius: 1em;
+		border-top-right-radius: 1em;
+		 position: absolute; /* Абсолютное позиционирование */
+		bottom: 15px; /* Положение от нижнего края */
+		right: 15px; /* Положение от правого края */
+	}
+	
+	body header div{
+		background:#406017;
+		height:50px;
+		border-bottom-left-radius: 1em;
+		border-bottom-right-radius: 1em;
+		background-image: url(../Trallbus.png);
+		background-repeat: no-repeat;
+		background-position: 4% center;
+		background-size: 40px auto;
+	}
+	h1{
+		font-size: 1.5em;
+		color: #446129;
+	}
+
+	body{
+		text-align: center;
+	}
+	
+	button{
+		color: #fff;
+    text-decoration: none;
+    user-select: none;
+    background: #94a24c;
+	padding: .7em 1.5em;
+	margin:3px;
+	border-radius:20px;
+	}
+	
+	button[name='station']{
+	width:60px;
+	height:60px;
+	
+	color: #fff;
+    text-decoration: none;
+    user-select: none;
+    background: #94a24c;
+	border:3px solid #94a24c;
+    
+    outline: none;
+	
+	
+	}
+	button[name='station']:hover{
+		background: #dcde9f;
+		border:3px solid #92a65f;
+	}
+	button[name='station']:active{
+		background: #446129;
+		border:3px solid  #183114;
+	}
+	
+	
+	form{display:none;}
